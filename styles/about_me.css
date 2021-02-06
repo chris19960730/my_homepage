@@ -52,3 +52,9 @@ h4 {
 .about-me a {
   cursor: pointer;
 }
+#add-friend {
+  color: #878ecd;
+}
+.list-group-item-action {
+  font-family: "Oswald", sans-serif;
+}

@@ -1,3 +1,4 @@
+// make avatar spin and play/pause music
 const onToggleAvatar = () => {
   const avatar = document.querySelector("#avatarImage");
   const audioPlayer = document.querySelector("#myAudio");
@@ -10,10 +11,12 @@ const onToggleAvatar = () => {
   }
 };
 
+// add click listener for avatar
 document
   .querySelector("#avatarImage")
   .addEventListener("click", onToggleAvatar);
 
+// gloabally initialize bootstrap tooltip and popover component
 window.onload = () => {
   const tooltipTriggerList = [].slice.call(
     document.querySelectorAll("[data-bs-toggle='tooltip']")

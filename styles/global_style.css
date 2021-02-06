@@ -21,6 +21,9 @@ h2 {
   font-size: 1.5em;
   color: #1e2022;
 }
+p {
+  font-family: "Acme", sans-serif;
+}
 #avatarImage {
   margin-left: 88%;
   height: 10%;
