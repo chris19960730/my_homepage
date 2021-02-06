@@ -1,0 +1,15 @@
+body {
+  font-size: 1.1em;
+}
+
+.title {
+  font-size: 1.3em;
+  font-family: "Oswald", sans-serif;
+}
+.card-footer {
+  font-family: "Oswald", sans-serif;
+}
+.school-logo {
+  width: 10rem;
+  height: 10rem;
+}
