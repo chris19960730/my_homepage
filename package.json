@@ -20,6 +20,7 @@
   "dependencies": {
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "reload": "^3.1.1"
   }
 }
