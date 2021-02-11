@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Haocheng Yang" />
+    <meta name="description" content="The About Me page of my portfolio. " />
+    <title>About me</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Shadows+Into+Light&display=swap&family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/global_style.css" />
+    <link rel="stylesheet" href="./styles/about_me.css" />
+  </head>
+  <body>
+    <!-- background music -->
+    <audio id="myAudio">
+      <source src="./sound/jazz-piano.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Do you wanna view the live demo or the source code?
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-footer">
+            <button id="live-demo" type="button" class="btn btn-success">
+              Live demo
+            </button>
+            <button id="github-repo" type="button" class="btn btn-warning">
+              Github Repo
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+
+    <!-- container for the entire page -->
+    <div class="container entire-container">
+      <!-- nav bar -->
+      <div class="header">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Haocheng Yang </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="about_me.html"
+                    >About Me</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="education.html">Educations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+              </ul>
+              <div class="justify-content-end">
+                <img
+                  id="avatarImage"
+                  src="./images/avatar.jpeg"
+                  alt="Haocheng's face"
+                />
+              </div>
+            </div>
+          </div>
+        </nav>
+        <hr id="nav-separate-line" />
+      </div>
+      <!-- nav bar end -->
+
+      <!-- section for content -->
+      <div class="content">
+        <div class="container section ps-0">
+          <div class="row">
+            <!-- left menu bar -->
+            <div class="col-md-2 left-col me-2">
+              <div id="menuBar" class="list-group sticky-top menu text-center">
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#about-me"
+                  >About Me</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#tech-stack"
+                  >Technology Stack</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#work-experience"
+                  >Work Experiences</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#projects"
+                  >Projects</a
+                >
+                <a class="list-group-item list-group-item-action" href="#"
+                  >Back to top</a
+                >
+              </div>
+            </div>
+            <!-- left menu bar end -->
+
+            <!-- right content column -->
+            <div class="col-md-9">
+              <h2 id="about-me" class="mt-5">About Me</h2>
+              <hr class="title-separate" />
+              <div class="row mt-5">
+                <div class="col-lg-4 info-block about-me">
+                  <p>
+                    I'm a graduate student at Northeastern University major in
+                    Computer Science. As I said, I am always on the journey to
+                    discover the art of programming, and my first stop is to be
+                    a proficient full-stack engineer.
+                  </p>
+                  <p>
+                    I'm more than a coder. I love travelling, playing basketball
+                    and video games!
+                  </p>
+                  <p>
+                    Recently I'm facinating of NBA 2K21,
+                    <a
+                      data-bs-container="body"
+                      data-bs-toggle="popover"
+                      data-bs-placement="bottom"
+                      data-bs-content="Search for 'chris_fantasy66'"
+                    >
+                      <strong id="add-friend">add me friend </strong>
+                    </a>
+                    and let's play together!
+                  </p>
+                </div>
+
+                <div class="col-lg-8 about-me">
+                  <img
+                    src="./images/carousel_1.jpeg"
+                    class="img-fluid"
+                    alt="Haocheng's photo"
+                  />
+                </div>
+              </div>
+              <h2 id="tech-stack" class="mt-5">My Tech Stacks</h2>
+              <hr class="title-separate" />
+              <div class="row mt-5">
+                <div class="col-lg-4">
+                  <h4 class="skill">Python</h4>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-2">
+                    <div
+                      class="progress-bar bg-primary"
+                      role="progressbar"
+                      style="width: 75%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <h4 class="skill">JavaScript</h4>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-2">
+                    <div
+                      class="progress-bar bg-warning"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <h4 class="skill">Ruby</h4>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-2">
+                    <div
+                      class="progress-bar bg-danger"
+                      role="progressbar"
+                      style="width: 90%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <h4 class="skill">React</h4>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-2">
+                    <div
+                      class="progress-bar bg-info"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <h4 class="skill">GraphQL</h4>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-2">
+                    <div
+                      class="progress-bar bg-dark"
+                      role="progressbar"
+                      style="width: 75%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <h2 id="work-experience" class="mt-5">Work Expeirences</h2>
+              <hr class="title-separate" />
+              <div class="row mt-5 d-flex justify-content-center">
+                <div class="col-lg-4">
+                  <div class="card">
+                    <img
+                      src="./images/appfolio.jpeg"
+                      class="card-img-top"
+                      alt="Appfolio Logo"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        FULL STACK SOFTWARE ENGINEER INTERN
+                      </h5>
+                      <p class="card-text">
+                        Developed and maintained community association and
+                        architectural reviews app which is part of Appfolio
+                        Property Manager software.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card">
+                    <img
+                      src="./images/sap.jpeg"
+                      class="card-img-top"
+                      alt="SAP Logo"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">SOFTWARE ENGINEER INTERN</h5>
+                      <p class="card-text">
+                        Developed a truck monitor system that can track truck
+                        route, monitor drivers’ behaviors, generate statistics
+                        report which reduced traffic accidents by 30%.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 id="projects" class="mt-5">Personal Projects</h2>
+              <hr class="title-separate" />
+              <div class="row mt-5">
+                <div class="col-4">
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <img
+                      src="./images/camera.jpg"
+                      class="img-thumbnail"
+                      alt="Image Sharer Picture"
+                    />
+                  </a>
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <span class="badge rounded-pill bg-danger"
+                        >Ruby on Rails</span
+                      >
+                      <span class="badge rounded-pill bg-warning"
+                        >JavaScript</span
+                      >
+                    </div>
+                  </div>
+                  <p class="project-label">Images Sharer</p>
+                </div>
+                <div class="col-4">
+                  <a href="https://github.com/chris19960730/Stocking-tracker"
+                    ><img
+                      src="./images/stocks.jpg"
+                      class="img-thumbnail"
+                      alt="Stocks Tracker Picture"
+                    />
+                  </a>
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <span class="badge rounded-pill bg-danger"
+                        >Ruby on Rails</span
+                      >
+                      <span class="badge rounded-pill bg-warning"
+                        >JavaScript</span
+                      >
+                    </div>
+                  </div>
+                  <p class="project-label">Stocks Tracker</p>
+                </div>
+                <div class="col-4">
+                  <a
+                    href="https://github.ccs.neu.edu/2020SPCS5500SV/project-ZySs"
+                  >
+                    <img
+                      src="./images/food.jpg"
+                      class="img-thumbnail"
+                      alt="Food Recommendation Blog Picture"
+                    />
+                  </a>
+                  <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center">
+                      <span class="badge rounded-pill bg-danger">Angular</span>
+                      <span class="badge rounded-pill bg-info">Express</span>
+                      <span class="badge rounded-pill bg-warning"
+                        >JavaScript</span
+                      >
+                    </div>
+                  </div>
+                  <p class="project-label">Food Recommendation Blog</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section end -->
+
+      <!-- footer for page -->
+      <div class="row">
+        <div class="col-lg-12 mt-5">
+          <div class="footer text-center mt-5">
+            <footer>
+              <div class="social">
+                <a href="https://github.com/chris19960730"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/haochengyang/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://twitter.com/YqweChris"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="mailto:yang.haoc@northeastern.edu"
+                  ><i class="far fa-envelope"></i
+                ></a>
+              </div>
+              <p class="copyright">Copyright © 2021, Haocheng Yang</p>
+            </footer>
+          </div>
+          <!-- right column end -->
+        </div>
+      </div>
+      <!-- footer end -->
+    </div>
+    <!-- entire container end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/about_me.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+body {
+  background-color: #c9d6df;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Lato;
+  color: black;
+  position: relative;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #1e2022;
+}
+p {
+  font-family: "Acme", sans-serif;
+}
+#avatarImage {
+  margin-left: 88%;
+  height: 10%;
+  width: 10%;
+  border-radius: 100%;
+}
+
+.header {
+  font-size: 1.4rem;
+  font-family: "Oswald", sans-serif;
+}
+#nav-separate-line {
+  width: 80%;
+  margin-top: 0;
+  margin-left: 10%;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.social {
+  text-align: center;
+  padding-bottom: 1.1em;
+}
+
+.social > a {
+  font-size: 3em;
+  width: 1.1em;
+  height: 1.1em;
+  line-height: 1.2em;
+  display: inline-block;
+  text-align: center;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.social > a:hover {
+  opacity: 0.2;
+}
+.copyright {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 0;
+}
+.entire-container {
+  background-color: #f0f5f9;
+}
+
+.copyright {
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+.rotate {
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

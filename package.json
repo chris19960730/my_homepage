@@ -1,0 +1,26 @@
+{
+  "name": "my_homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris19960730/my_homepage.git"
+  },
+  "keywords": [],
+  "author": "Haocheng Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris19960730/my_homepage/issues"
+  },
+  "homepage": "https://github.com/chris19960730/my_homepage#readme",
+  "dependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "prettier": "^2.2.1",
+    "reload": "^3.1.1"
+  }
+}
